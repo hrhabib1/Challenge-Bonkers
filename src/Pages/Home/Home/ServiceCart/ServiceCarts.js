@@ -6,21 +6,21 @@ import ServiceCart from './ServiceCart';
 const ServiceCarts = () => {
     const serviceCarts = [
         {
-            id :1,
+            id: 1,
             name: 'Fluoride treatment',
             description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit nisi esse iste magnam blanditiis fugiat, molestiae nemo doloribus aliquam ratione aut ad, libero eveniet aperiam minima debitis sit neque est.',
             icon: fluoride,
 
         },
         {
-            id :2,
+            id: 2,
             name: 'Cavity Filling',
             description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit nisi esse iste magnam blanditiis fugiat, molestiae nemo doloribus aliquam ratione aut ad, libero eveniet aperiam minima debitis sit neque est.',
             icon: cavity,
 
         },
         {
-            id :3,
+            id: 3,
             name: 'Teeth Whitening',
             description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit nisi esse iste magnam blanditiis fugiat, molestiae nemo doloribus aliquam ratione aut ad, libero eveniet aperiam minima debitis sit neque est.',
             icon: whitening,
@@ -35,10 +35,10 @@ const ServiceCarts = () => {
             </div>
             <div className='grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16'>
                 {
-                    serviceCarts.map(service=> <ServiceCart
+                    serviceCarts.map(service => <ServiceCart
                         key={service.id}
                         service={service}
-                        ></ServiceCart>)
+                    ></ServiceCart>)
                 }
             </div>
         </div>
