@@ -7,7 +7,8 @@ const Banner = () => {
    
     return (
        <section  style= {{
-        background : `url(${chairbg})`
+        background : `url(${chairbg})`,
+        backgroundSize: 'cover'
     }}>
          <div className="hero">
             <div className="hero-content flex-col lg:flex-row-reverse">
